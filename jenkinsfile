@@ -1,0 +1,20 @@
+Pipeline {
+    agent any 
+    stages {
+        stage('chekout') {
+            steps {
+                git 'https://github.com/ameliaapriyani145-dot/proyek-pertama'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building the project'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo'Deploy complete!'
+            }
+        }
+    }
+}
