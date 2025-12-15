@@ -1,23 +1,18 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                echo 'Checkout source code'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Build application'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Run tests'
-            }
-        }
+  stages {
+    stage('Install') {
+      steps {
+        sh 'npm install'
+      }
     }
+
+    stage('Run App') {
+      steps {
+        sh 'nohup node app.js &'
+      }
+    }
+  }
 }
+

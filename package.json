@@ -1,0 +1,23 @@
+{
+  "name": "simple-devops-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameliaapriyani145-dot/simple-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameliaapriyani145-dot/simple-app/issues"
+  },
+  "homepage": "https://github.com/ameliaapriyani145-dot/simple-app#readme",
+  "description": ""
+}
